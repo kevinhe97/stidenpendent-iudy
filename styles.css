@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Sweden-Sans';
+    src: url('fonts/SwedenSans/SwedenSans_webfonts/swedensans-webfont.eot');
+    src: url('fonts/SwedenSans/SwedenSans_webfonts/swedensans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/SwedenSans/SwedenSans_webfonts/swedensans-webfont.woff') format('woff'),
+         url('fonts/SwedenSans/SwedenSans_webfonts/swedensans-webfont.ttf') format('truetype'),
+         url('fonts/SwedenSans/SwedenSans_webfonts/swedensans-webfont.svg#On-AirInline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sweden-Sans';
+    src: url('fonts/SwedenSans/SwedenSansBold_webfonts/swedensansbold-webfont.eot');
+    src: url('fonts/SwedenSans/SwedenSansBold_webfonts/swedensansbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/SwedenSans/SwedenSansBold_webfonts/swedensansbold-webfont.woff') format('woff'),
+         url('fonts/SwedenSans/SwedenSansBold_webfonts/swedensansbold-webfont.ttf') format('truetype'),
+         url('fonts/SwedenSans/SwedenSansBold_webfonts/swedensansbold-webfont.svg#On-AirInline') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sweden-Sans';
+}
+
