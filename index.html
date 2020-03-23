@@ -5,21 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leveling-Up</title>
-    <script></script>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </head>
 
 <body>
-    <div id="nav-header" class="header"></div>
-    <div id="main" class="container">
-        <div></div>
+
+    <div id="main" class="grid">
+        <div id="header">
+            <div class="home">
+                <a href="index.html">
+                    <h1>Level—Up</h1>
+                </a>
+            </div>
+            <div class="menu">
+            </div>
+        </div>
+
+        <div id="wrapper">
+            <div id="hexes">
+                <svg width="529" height="558" viewBox="0 0 529 558" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path id="node-1" d="M295.253 62.5L420.253 62.5L482.753 170.753L420.253 279.006L295.253 279.006L232.753 170.753L295.253 62.5Z" fill="#191923"/>
+                    <path id="node-2" d="M108.253 170L233.253 170L295.753 278.253L233.253 386.506L108.253 386.506L45.7532 278.253L108.253 170Z" fill="#5189E3"/>
+                    <path id="node-3" d="M295.284 278.947L420.284 278.947L482.784 387.2L420.284 495.453L295.284 495.453L232.784 387.2L295.284 278.947Z" fill="#E94A96"/>
+                    <g id="patt-1" fill="#FFD800">
+                        <circle r="7.5" transform="matrix(1 0 0 -1 424.5 238.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 439.5 262.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 469.5 262.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 454.5 238.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 484.5 238.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 394.5 238.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 364.5 238.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 409.5 262.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 379.5 262.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 379.5 214.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 394.5 190.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 409.5 214.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 424.5 190.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 439.5 214.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 469.5 214.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 454.5 190.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 484.5 190.5)"/>
+                    </g>
+                    <g id="patt-2" fill="#E94A96" r="7.5">
+                        <circle r="7.5" transform="matrix(1 0 0 -1 88.5001 158.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 118.5 182.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 148.5 182.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 178.5 182.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 118.5 158.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 148.5 158.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 178.5 158.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 58.5001 158.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 88.5 182.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 58.5 182.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 58.5 134.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 58.5001 110.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 88.5 134.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 88.5001 110.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 118.5 134.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 148.5 134.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 178.5 134.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 118.5 110.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 148.5 110.5)"/>
+                        <circle r="7.5" transform="matrix(1 0 0 -1 178.5 110.5)"/>
+                    </g>
+                    <g id="patt-3" fill="#5189E3">
+                        <circle r="7.5" cx="248.5" cy="437.5"/>
+                        <circle r="7.5" cx="278.5" cy="437.5"/>
+                        <circle r="7.5" cx="308.5" cy="437.5"/>
+                        <circle r="7.5" cx="218.5" cy="437.5"/>
+                        <circle r="7.5" cx="188.5" cy="437.5"/>
+                        <circle r="7.5" cx="233.5" cy="413.5"/>
+                        <circle r="7.5" cx="263.5" cy="413.5"/>
+                        <circle r="7.5" cx="293.5" cy="413.5"/>
+                        <circle r="7.5" cx="203.5" cy="413.5"/>
+                        <circle r="7.5" cx="203.5" cy="461.5"/>
+                        <circle r="7.5" cx="218.5" cy="485.5"/>
+                        <circle r="7.5" cx="188.5" cy="485.5"/>
+                        <circle r="7.5" cx="233.5" cy="461.5"/>
+                        <circle r="7.5" cx="248.5" cy="485.5"/>
+                        <circle r="7.5" cx="263.5" cy="461.5"/>
+                        <circle r="7.5" cx="293.5" cy="461.5"/>
+                        <circle r="7.5" cx="278.5" cy="485.5"/>
+                    </g>
+                </svg>  
+            </div>
+        </div>
+
+        <div id="footer">
+            <img id="avatar" src="avatars/male.svg">
+        </div>
+
     </div>
-    <div id="nav-footer" class="footer">
-        <svg class="avatar" width="50" height="125" viewBox="0 0 50 125" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M37.2422 28.337C39.1323 28.337 40.8718 28.7083 42.4613 29.4514C47.179 31.8673 49.9646 36.4589 50 41.5789V76.8469C49.1151 82.4535 42.8074 80.929 42.6547 76.8469V43.5455C42.0926 41.6465 38.4883 42.4339 38.4021 43.5455V119.981C37.4856 127.786 27.5725 125.495 27.3197 119.85V73.0448C26.6858 70.0258 22.5141 71.3976 22.4227 73.1759C22.5996 88.7336 22.5516 104.292 22.5516 119.85C21.563 127.615 11.698 125.629 11.4691 119.981L11.3403 43.5455C10.7625 41.6874 7.42273 42.4001 7.34533 43.5455V76.8469C6.46031 82.4535 0.152759 80.929 0 76.8469V41.5789C0.0891777 36.6772 1.85491 31.7667 6.05671 29.4514C7.43133 28.7083 9.10656 28.3369 11.0825 28.3369L37.2422 28.337V28.337ZM37.1122 12.3205C37.1122 19.125 31.6904 24.6411 25.0023 24.6411C18.3143 24.6411 12.8925 19.125 12.8925 12.3205C12.8924 5.51615 18.3142 0 25.0021 0C31.6904 0 37.1122 5.51615 37.1122 12.3205V12.3205Z"
-                fill="#5D3B9E" />
-        </svg>
-    </div>
+
 </body>
 
 </html>
