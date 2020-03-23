@@ -1,5 +1,5 @@
 // draggable effects
 
 $(function() {
-    $("#avatar").draggable();
+    $(".character").draggable();
 });
