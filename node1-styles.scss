@@ -41,8 +41,7 @@ main {
 section {
 	min-height: 100vh;
 	padding: 1rem;
-	display: inline-block;
-	flex-direction: row;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	scroll-snap-align: start;
