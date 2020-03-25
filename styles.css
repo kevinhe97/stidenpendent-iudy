@@ -25,7 +25,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Sweden-Sans';
+    font-family: 'Sweden-Sans', sans-serif;
     color: #5D3B9E;
     background-color: #FFFFFA;
     scroll-snap-type: mandatory;
