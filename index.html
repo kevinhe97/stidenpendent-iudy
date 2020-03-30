@@ -9,6 +9,7 @@
     <script src="script.js" defer></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
@@ -22,78 +23,102 @@
 
         </div>
 
+        <div id="subtitle">
+            <h3>A Parent's Guide to Finding Silver Linings from Minecraft</h3>
+        </div>
+
+        <div id="text-1" class="node-title">
+            <h2>Capability</h2>
+        </div>
+        <div id="text-2" class="node-title">
+            <h2>Creativity</h2>
+        </div>
+        <div id="text-3" class="node-title">
+            <h2>Community</h2>
+        </div>
+
         <div id="wrapper">
             <div id="hexes">
                 <svg width="529" height="558" viewBox="0 0 529 558" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <a id="entrance-1" href="node-1.html"><path id="node-1" d="M295.253 62.5L420.253 62.5L482.753 170.753L420.253 279.006L295.253 279.006L232.753 170.753L295.253 62.5Z" fill="#191923" z-index="50"/></a>
-                    <a id="entrance-2" href="*"><path id="node-2" d="M108.253 170L233.253 170L295.753 278.253L233.253 386.506L108.253 386.506L45.7532 278.253L108.253 170Z" fill="#5189E3"/></a>
-                    <a id="entrance-3" href="*"><path id="node-3" d="M295.284 278.947L420.284 278.947L482.784 387.2L420.284 495.453L295.284 495.453L232.784 387.2L295.284 278.947Z" fill="#E94A96"/></a>
-                    <g id="patt-1" fill="#FFD800">
-                        <circle r="7.5" transform="matrix(1 0 0 -1 424.5 238.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 439.5 262.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 469.5 262.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 454.5 238.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 484.5 238.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 394.5 238.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 364.5 238.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 409.5 262.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 379.5 262.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 379.5 214.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 394.5 190.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 409.5 214.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 424.5 190.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 439.5 214.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 469.5 214.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 454.5 190.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 484.5 190.5)"/>
-                    </g>
-                    <g id="patt-2" fill="#E94A96" r="7.5">
-                        <circle r="7.5" transform="matrix(1 0 0 -1 88.5001 158.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 118.5 182.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 148.5 182.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 178.5 182.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 118.5 158.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 148.5 158.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 178.5 158.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 58.5001 158.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 88.5 182.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 58.5 182.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 58.5 134.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 58.5001 110.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 88.5 134.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 88.5001 110.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 118.5 134.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 148.5 134.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 178.5 134.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 118.5 110.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 148.5 110.5)"/>
-                        <circle r="7.5" transform="matrix(1 0 0 -1 178.5 110.5)"/>
-                    </g>
-                    <g id="patt-3" fill="#5189E3">
-                        <circle r="7.5" cx="248.5" cy="437.5"/>
-                        <circle r="7.5" cx="278.5" cy="437.5"/>
-                        <circle r="7.5" cx="308.5" cy="437.5"/>
-                        <circle r="7.5" cx="218.5" cy="437.5"/>
-                        <circle r="7.5" cx="188.5" cy="437.5"/>
-                        <circle r="7.5" cx="233.5" cy="413.5"/>
-                        <circle r="7.5" cx="263.5" cy="413.5"/>
-                        <circle r="7.5" cx="293.5" cy="413.5"/>
-                        <circle r="7.5" cx="203.5" cy="413.5"/>
-                        <circle r="7.5" cx="203.5" cy="461.5"/>
-                        <circle r="7.5" cx="218.5" cy="485.5"/>
-                        <circle r="7.5" cx="188.5" cy="485.5"/>
-                        <circle r="7.5" cx="233.5" cy="461.5"/>
-                        <circle r="7.5" cx="248.5" cy="485.5"/>
-                        <circle r="7.5" cx="263.5" cy="461.5"/>
-                        <circle r="7.5" cx="293.5" cy="461.5"/>
-                        <circle r="7.5" cx="278.5" cy="485.5"/>
-                    </g>
+                    <a id="entrance-1" href="node-1.html" class="droptarget">
+                        <path id="node-1" d="M295.253 62.5L420.253 62.5L482.753 170.753L420.253 279.006L295.253 279.006L232.753 170.753L295.253 62.5Z" fill="#191923" stroke="#5D3B9E" stroke-width="3"/>
+                        <g id="patt-1" fill="#FFD800" z-index="100">
+                            <circle r="7.5" transform="matrix(1 0 0 -1 424.5 238.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 439.5 262.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 469.5 262.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 454.5 238.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 484.5 238.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 394.5 238.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 364.5 238.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 409.5 262.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 379.5 262.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 379.5 214.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 394.5 190.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 409.5 214.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 424.5 190.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 439.5 214.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 469.5 214.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 454.5 190.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 484.5 190.5)"/>
+                        </g>
+                    </a>
+                    <a id="entrance-2" href="*" class="droptarget">
+                        <path id="node-2" d="M108.253 170L233.253 170L295.753 278.253L233.253 386.506L108.253 386.506L45.7532 278.253L108.253 170Z" fill="#5189E3" stroke="#5D3B9E" stroke-width="3"/>
+                        <g id="patt-2" fill="#D1448B" r="7.5" z-index="100">
+                            <circle r="7.5" transform="matrix(1 0 0 -1 88.5001 158.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 118.5 182.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 148.5 182.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 178.5 182.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 118.5 158.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 148.5 158.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 178.5 158.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 58.5001 158.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 88.5 182.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 58.5 182.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 58.5 134.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 58.5001 110.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 88.5 134.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 88.5001 110.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 118.5 134.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 148.5 134.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 178.5 134.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 118.5 110.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 148.5 110.5)"/>
+                            <circle r="7.5" transform="matrix(1 0 0 -1 178.5 110.5)"/>
+                        </g>
+                    </a>
+                    <a id="entrance-3" href="*" class="droptarget">
+                        <path id="node-3" d="M295.284 278.947L420.284 278.947L482.784 387.2L420.284 495.453L295.284 495.453L232.784 387.2L295.284 278.947Z" fill="#E94A96" stroke="#5D3B9E" stroke-width="3"/>
+                        <g id="patt-3" fill="#4AD5D8" z-index="100">
+                            <circle r="7.5" cx="248.5" cy="437.5"/>
+                            <circle r="7.5" cx="278.5" cy="437.5"/>
+                            <circle r="7.5" cx="308.5" cy="437.5"/>
+                            <circle r="7.5" cx="218.5" cy="437.5"/>
+                            <circle r="7.5" cx="188.5" cy="437.5"/>
+                            <circle r="7.5" cx="233.5" cy="413.5"/>
+                            <circle r="7.5" cx="263.5" cy="413.5"/>
+                            <circle r="7.5" cx="293.5" cy="413.5"/>
+                            <circle r="7.5" cx="203.5" cy="413.5"/>
+                            <circle r="7.5" cx="203.5" cy="461.5"/>
+                            <circle r="7.5" cx="218.5" cy="485.5"/>
+                            <circle r="7.5" cx="188.5" cy="485.5"/>
+                            <circle r="7.5" cx="233.5" cy="461.5"/>
+                            <circle r="7.5" cx="248.5" cy="485.5"/>
+                            <circle r="7.5" cx="263.5" cy="461.5"/>
+                            <circle r="7.5" cx="293.5" cy="461.5"/>
+                            <circle r="7.5" cx="278.5" cy="485.5"/>
+                        </g>
+                    </a>
                 </svg>  
             </div>
         </div>
 
+        <div id="about">
+            <p>Drop the avatar into a node to learn more.</p>
+        </div>
+
         <div id="avatar" class="footer">
-            <img class="character" src="avatars/male.svg">
+            <img class="character" src="avatars/male.svg" draggable="true">
         </div>
 
         <div id="exp-bar" class="footer">
