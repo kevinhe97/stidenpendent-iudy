@@ -48,15 +48,10 @@
 
 document.addEventListener("dragstart", function(event) {
     // The dataTransfer.setData() method sets the data type and the value of the dragged data
-    event.dataTransfer.setData("Image", event.target.id);
+    event.dataTransfer.setData("Text", event.target.id);
     
     // Change the opacity of the draggable element
     event.target.style.opacity = "0.4";
-});
-
-// While dragging the p element, change the color of the output text
-document.addEventListener("drag", function(event) {
-    
 });
 
 document.addEventListener("dragend", function(event) {
