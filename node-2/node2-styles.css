@@ -35,7 +35,7 @@ body {
 }
 
 /*hiding scrollbar*/
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
 }
 
@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
     flex-direction: row;
     width: 400vw;
     transform: rotate(90deg) translateY(-100vh);
-  transform-origin: top left;
+    transform-origin: top left;
   }
   .one {
     background: #efdefe;
@@ -72,7 +72,7 @@ body::-webkit-scrollbar {
     overflow-x: hidden;
     position: absolute;
     scrollbar-width: none;
-  -ms-overflow-style: none;
+    -ms-overflow-style: none;
   }
 
   
