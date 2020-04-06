@@ -20,7 +20,7 @@ const callback = (entries, observer) => {
 const observer = new IntersectionObserver(callback, options)
 
 sections.forEach((section, index) => {
-	const sectionChildren = [...section.querySelector('.grid').children]
+	const sectionChildren = [...section.querySelector('.text-grid').children]
 
   sectionChildren.forEach((el, index) => {
     el.style.setProperty('--delay', `${index * 100}ms`)

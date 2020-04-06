@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
 #home {
     grid-column: 2 / 9;
     grid-row: 2;
-    align-items: start;
+    align-items: flex-end;
     z-index: 100;
 }
 
@@ -163,7 +163,8 @@ path {
 }
 
 h1, h2 {
-    margin-top: 0;
+    margin: 0;
+    line-height: 1;
 }
 
 h3 {
