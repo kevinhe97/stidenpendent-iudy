@@ -391,7 +391,8 @@ section:nth-child(5) .dates {
 #cloud2 {
   z-index: 5;
   position: absolute;
-  left: 75vw;
-  top: 60vh;
+  left: 70vw;
+  top: 45vh;
+  z-index: 5;
 }
 /*# sourceMappingURL=node2-styles.css.map */
