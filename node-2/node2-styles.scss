@@ -175,10 +175,27 @@ a{
     background: #5D3B9E;
 }
 
+#exp {
+	font-size: 1.5rem;
+	position: relative;
+	grid-column: 10;
+	grid-row: 8;
+
+}
+
+.caption {
+	grid-column: 8 / 11;
+	grid-row: 8;
+	font-weight: normal;
+	font-size: 1rem;
+	text-align: right;
+}
+
 .title1 {
 	grid-column: 2 / 6;
 	grid-row: 4 / 7;
 	text-align: right;
+	margin-top: -2rem;
 	border-right: 5px solid #D1448B;
 	padding-right: 1rem;
 	
@@ -194,6 +211,7 @@ a{
 	line-height: 1.0;
 	grid-column: 6 / -1;
 	grid-row: 4 / -1;
+	margin-top: -2rem;
 	align-self: center;
 	
 	@media (min-width: $md) {
@@ -205,6 +223,7 @@ h2 {
 	font-size: 2.5rem;
 	grid-column: 3 / span 4;
 	grid-row: 3 / 5;
+	z-index: 5;
 	
 	@media (min-width: $md) {
 		font-size: 4rem;
@@ -225,13 +244,14 @@ h2 {
 	&::after {
 		content: '';
 		grid-area: 4 / 4 / -4 / -4;
-		z-index: -1;
+		z-index: 0;
 	}
 }
 
 .body-text {
 	grid-column: 4 / span 4;
 	grid-row: 6 / 9;
+	z-index: 4;
 }
 
 .dates {
@@ -264,7 +284,8 @@ section {
 				background-image: url("../images/mc-imgB.jpg");
 				background-size: cover;
 				grid-area: 2 / 4 / 8 / 9;
-				margin: 2rem;
+				margin-left: -5rem;
+				margin-right: 5rem;
 			}
 		}
 		h2 {
@@ -276,8 +297,9 @@ section {
 			padding-top: 1rem;
 		}
 		.body-text {
-			grid-column: 3 / 6;
+			grid-column: 3 / 5;
 			grid-row: 4 / 6;
+			margin-right: 1rem;
 		}
 	}
 	
@@ -300,7 +322,7 @@ section {
 			grid-column: 4 / 6;
 			grid-row: 6 / -1;
 			margin-top: -3rem;
-			margin-left: -3rem;
+			margin-left: -8rem;
 		}
 	}
 	
@@ -330,15 +352,15 @@ section {
 
 #cloud1 {
 	z-index: -15;
-	position: absolute;
+	position: relative;
 	left: 10vw;
 	top: 16vh;
 }
 #cloud2 {
 	z-index: 2;
-	position: absolute;
+	position: relative;
 	left: 72vw;
-	top: 43vh;
+	top: 40vh;
 }
 #cloud3 {
 	z-index: -5;
@@ -352,6 +374,59 @@ section {
 	position: relative;
 	left: 70vw;
 	top: 5vh;
-	
+}
+#cloud5 {
+	z-index: 5;
+	position: relative;
+	left: 25vw;
+	top: 1vh;
+}
+#cloud6 {
+	z-index: -10;
+	position: relative;
+	left: 0vw;
+	top: 55vh;
+}
+#cloud7 {
+	z-index: -50;
+	position: relative;
+	left: 55vw;
+	top: 35vh;
+}
+#cloud8 {
+	z-index: -5;
+	position: relative;
+	left: 2.5vw;
+	top: 45vh;
+}
+#cloud9 {
+	z-index: 5;
+	position: relative;
+	left: 75vw;
+	top: 20vh;
+}
+#cloud10 {
+	z-index: 5;
+	position: relative;
+	left: 40vw;
+	top: 5vh;
+}
+#cloud11 {
+	z-index: 2;
+	position: relative;
+	left: 47vw;
+	top: 50vh;
+}
+#cloud12 {
+	z-index: 5;
+	position: relative;
+	left: -2.5vw;
+	top: 20vh;
+}
+#cloud13 {
+	z-index: -5;
+	position: relative;
+	left: 60vw;
+	top: 5vh;
 }
   
