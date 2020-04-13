@@ -69,7 +69,6 @@ body {
 #ground {
   height: 100%;
   width: 100vw;
-  background-image: url("../images/mc-floor1.png");
   background-size: contain;
   background-repeat: repeat-x;
   -ms-grid-row: 9;
